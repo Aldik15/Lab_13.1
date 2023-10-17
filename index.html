@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Изображения</title>
+ <style>
+ .image {
+ width: 100px;
+ height: auto;
+ margin: 10px;
+ }
+ </style>
+ </head>
+ <body>
+ <h1>Я люблю аниме</h1>
+ <div id="imageContainer"></div>
+ <script>
+ const imageUrls = [
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+ "https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg",
+"https://i.pinimg.com/1200x/d8/5a/81/d85a810820b7ba00122476110223de70.jpg"
+ ];
+ for (let i = 0; i < imageUrls.length; i++) {
+ const img = document.createElement("img");
+ img.src = imageUrls[i];
+ img.alt = "Изображение " + (i + 1);
+ img.classList.add("image"); 
+ document.getElementById("imageContainer").appendChild(img);
+ }
+ </script>
+ </body>
+ </html>
